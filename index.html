@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transpofleet | Genera ingresos con tu vehículo</title>
+    <meta name="description" content="Conecta propietarios de vehículos con conductores para alquiler. Genera ingresos pasivos con tu auto en plataformas de movilidad." />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Transpofleet | Genera ingresos pasivos con tu auto" />
+    <meta property="og:description" content="Nos encargamos de encontrar conductores, gestionar pagos y brindar soporte para que ganes dinero sin complicaciones." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://transpofleet.com" />
+    <meta property="og:image" content="https://transpofleet.com/hero_modern_car.png" />
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <!-- User's logo.gif on the left -->
+                <img src="/logo.gif" alt="Transpofleet Logo" class="nav-logo" loading="lazy"/>
+            </div>
+            <div class="nav-center">
+                <!-- User's centrodenavbar.jpeg in the center on desktop -->
+                <img src="/centrodenavbar.jpeg" alt="Centro Navbar" class="nav-center-img" loading="lazy"/>
+            </div>
+            <div class="nav-right desktop-buttons">
+                <!-- Hamburger menu icon -->
+                <button class="mobile-menu-btn" aria-label="Abrir menú" id="mobile-menu-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#owners" class="btn btn-primary mobile-btn w-full">ALQUILAR MI AUTO</a>
+            <a href="#drivers" class="btn btn-secondary mobile-btn w-full">QUIERO ALQUILAR UN AUTO</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero section-animate">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">🚗</span> Genera ingresos con tu vehículo
+            </div>
+            <h1 class="hero-title">Convierte tu auto en una fuente de <span class="highlight">ingresos pasivos</span></h1>
+            <p class="hero-subtitle">Nos encargamos de encontrar conductores, gestionar pagos, monitorear el vehículo y brindar soporte para que ganes dinero sin complicaciones.</p>
+            <div class="hero-ctas">
+                <a href="https://wa.me/15556004102?text=¡Hola!%20Quiero%20hacer%20de%20mi%20auto%20una%20fuente%20de%20ingresos%20pasivos" class="btn btn-primary track-wa" target="_blank" rel="noopener noreferrer">
+                    ALQUILAR MI AUTO 
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="https://wa.me/15556004102?text=¡Hola!%20Me%20gustaría%20información%20sobre%20el%20alquiler%20de%20autos" class="btn btn-secondary track-wa" target="_blank" rel="noopener noreferrer">
+                    QUIERO ALQUILAR UN AUTO
+                </a>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <p class="hero-image-label">Cómo funciona <strong>Transpofleet</strong></p>
+            <div class="video-container">
+                <video id="hero-video" class="hero-video" src="/video.mp4" autoplay loop muted playsinline></video>
+                <div class="video-controls">
+                    <button id="play-pause-btn" class="video-btn" aria-label="Play/Pause">
+                        <svg class="icon-pause" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                        <svg class="icon-play" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: none;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    </button>
+                    <button id="mute-unmute-btn" class="video-btn" aria-label="Mute/Unmute">
+                        <svg class="icon-muted" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                        <svg class="icon-unmuted" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- METRICS -->
+    <section class="trust-metrics section-animate">
+        <div class="metrics-grid">
+            <div class="card metric-card">
+                <div class="icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                </div>
+                <h3 class="card-title">Monitoreo continuo</h3>
+                <p class="card-text">Tu vehículo siempre supervisado.</p>
+            </div>
+            <div class="card metric-card">
+                <div class="icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+                </div>
+                <h3 class="card-title">Pagos puntuales</h3>
+                <p class="card-text">Recibe tus ingresos a tiempo.</p>
+            </div>
+            <div class="card metric-card">
+                <div class="icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                </div>
+                <h3 class="card-title">Soporte permanente</h3>
+                <p class="card-text">Asistencia cuando la necesites.</p>
+            </div>
+            <div class="card metric-card">
+                <div class="icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                </div>
+                <h3 class="card-title">Operación simplificada</h3>
+                <p class="card-text">Sin complicaciones, todo gestionado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OWNERS -->
+    <section id="owners" class="owners-section section-animate">
+        <div class="section-header">
+            <h2 class="section-title">¿Tienes un auto?</h2>
+            <p class="section-subtitle">Nosotros lo convertimos en ingresos.</p>
+        </div>
+        <div class="cards-grid">
+            <div class="card feature-card">
+                <div class="icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                </div>
+                <h3 class="card-title">Recibe pagos periódicos</h3>
+                <p class="card-text">Ingresos constantes depositados a tu cuenta sin necesidad de perseguir pagos.</p>
+            </div>
+            <div class="card feature-card">
+                <div class="icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <h3 class="card-title">Vehículo monitoreado</h3>
+                <p class="card-text">Tecnología de rastreo y supervisión para que siempre sepas dónde está tu auto.</p>
+            </div>
+            <div class="card feature-card">
+                <div class="icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                </div>
+                <h3 class="card-title">Soporte y mantenimiento coordinado</h3>
+                <p class="card-text">Nos encargamos de coordinar el mantenimiento para que tu vehículo se mantenga en óptimas condiciones.</p>
+            </div>
+        </div>
+        <div class="cta-wrapper">
+            <a href="https://wa.me/15556004102" class="btn btn-primary track-wa" target="_blank" rel="noopener noreferrer">
+                ALQUILAR MI AUTO
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- DRIVERS -->
+    <section id="drivers" class="drivers-section section-animate">
+        <div class="section-header">
+            <h2 class="section-title">¿Necesitas un vehículo para trabajar?</h2>
+            <p class="section-subtitle">Accede a un auto listo para generar ingresos.</p>
+        </div>
+        <div class="cards-grid">
+            <div class="card feature-card">
+                <div class="icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                </div>
+                <h3 class="card-title">Vehículos disponibles</h3>
+                <p class="card-text">Accede a autos listos para trabajar en plataformas de movilidad.</p>
+            </div>
+            <div class="card feature-card">
+                <div class="icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                </div>
+                <h3 class="card-title">Proceso rápido</h3>
+                <p class="card-text">Validación ágil para que comiences a generar ingresos cuanto antes.</p>
+            </div>
+            <div class="card feature-card">
+                <div class="icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                </div>
+                <h3 class="card-title">Soporte continuo</h3>
+                <p class="card-text">Asistencia permanente para que nunca te quedes sin respaldo.</p>
+            </div>
+        </div>
+        <div class="cta-wrapper">
+            <a href="https://wa.me/15556004102" class="btn btn-secondary track-wa" target="_blank" rel="noopener noreferrer">
+                QUIERO ALQUILAR UN AUTO
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- TIMELINE (How it works) -->
+    <section class="how-it-works section-animate">
+        <div class="section-header">
+            <h2 class="section-title">Cómo funciona</h2>
+            <p class="section-subtitle">Un proceso simple en 4 pasos</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon-container">
+                    <div class="icon-box rounded">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    </div>
+                </div>
+                <div class="timeline-content">
+                    <span class="step-label">PASO 01</span>
+                    <h3 class="card-title">Contáctanos</h3>
+                    <p class="card-text">Escríbenos por WhatsApp y cuéntanos tu interés.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon-container">
+                    <div class="icon-box rounded">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </div>
+                </div>
+                <div class="timeline-content">
+                    <span class="step-label">PASO 02</span>
+                    <h3 class="card-title">Validamos tu perfil</h3>
+                    <p class="card-text">Revisamos la información para garantizar seguridad.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon-container">
+                    <div class="icon-box rounded">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                    </div>
+                </div>
+                <div class="timeline-content">
+                    <span class="step-label">PASO 03</span>
+                    <h3 class="card-title">Asignamos vehículo</h3>
+                    <p class="card-text">Conectamos propietario y conductor de forma ágil.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon-container">
+                    <div class="icon-box rounded">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                    </div>
+                </div>
+                <div class="timeline-content">
+                    <span class="step-label">PASO 04</span>
+                    <h3 class="card-title">Empiezas a generar ingresos</h3>
+                    <p class="card-text">Comienza a recibir pagos de manera constante.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials section-animate">
+        <div class="section-header">
+            <h2 class="section-title">Lo que dicen nuestros usuarios</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="card testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Proceso simple y pagos puntuales. Mi auto genera ingresos sin que tenga que preocuparme por nada."</p>
+                <div class="testimonial-author">
+                    <img src="https://ui-avatars.com/api/?name=Carlos+M&background=222&color=F5FF00" alt="Carlos M" class="author-img" loading="lazy">
+                    <div>
+                        <h4 class="author-name">Carlos M.</h4>
+                        <p class="author-city">Lima, Perú</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"En una semana ya tenía un vehículo asignado. El soporte es excelente y la gestión muy profesional."</p>
+                <div class="testimonial-author">
+                    <img src="https://ui-avatars.com/api/?name=Maria+L&background=222&color=F5FF00" alt="Maria L" class="author-img" loading="lazy">
+                    <div>
+                        <h4 class="author-name">María L.</h4>
+                        <p class="author-city">Santa Cruz, Bolivia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Transpofleet me dio la tranquilidad de saber que mi auto está monitoreado y bien cuidado."</p>
+                <div class="testimonial-author">
+                    <img src="https://ui-avatars.com/api/?name=Jorge+R&background=222&color=F5FF00" alt="Jorge R" class="author-img" loading="lazy">
+                    <div>
+                        <h4 class="author-name">Jorge R.</h4>
+                        <p class="author-city">Arequipa, Perú</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARISON -->
+    <section class="comparison section-animate">
+        <div class="section-header">
+            <h2 class="section-title">Por qué Transpofleet</h2>
+        </div>
+        <div class="comparison-container">
+            <div class="card comparison-card others">
+                <h4 class="comparison-header">OTROS MÉTODOS</h4>
+                <ul>
+                    <li><span class="cross">✕</span> Buscar conductor por cuenta propia</li>
+                    <li><span class="cross">✕</span> Gestionar pagos manualmente</li>
+                    <li><span class="cross">✕</span> Resolver problemas solo</li>
+                </ul>
+            </div>
+            <div class="card comparison-card us">
+                <h4 class="comparison-header highlight">CON TRANSPOFLEET</h4>
+                <ul>
+                    <li><span class="check">✓</span> Gestión centralizada</li>
+                    <li><span class="check">✓</span> Monitoreo continuo</li>
+                    <li><span class="check">✓</span> Soporte permanente</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta section-animate">
+        <div class="section-header">
+            <h2 class="section-title">Empieza hoy mismo</h2>
+            <p class="section-subtitle">Ya sea que tengas un vehículo o necesites uno para trabajar, podemos ayudarte.</p>
+        </div>
+        <div class="final-cta-buttons">
+            <a href="https://wa.me/15556004102" class="btn btn-primary track-wa" target="_blank" rel="noopener noreferrer">
+                ALQUILAR MI AUTO
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="https://wa.me/15556004102" class="btn btn-secondary track-wa" target="_blank" rel="noopener noreferrer">
+                QUIERO ALQUILAR UN AUTO
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2 class="footer-logo-text">Transpofleet</h2>
+                <div class="countries">
+                    <span>Perú 🇵🇪</span>
+                    <span>Bolivia 🇧🇴</span>
+                </div>
+            </div>
+            
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>CONTACTO</h4>
+                    <a href="https://wa.me/15556004102" target="_blank" rel="noopener noreferrer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> WhatsApp
+                    </a>
+                    <a href="mailto:contacto@transpofleet.com">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> contacto@transpofleet.com
+                    </a>
+                    <a href="https://linkedin.com/company/transpofleet" target="_blank" rel="noopener noreferrer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn
+                    </a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>SERVICIOS</h4>
+                    <a href="#owners">Alquilar mi auto</a>
+                    <a href="#drivers">Quiero alquilar un auto</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Transpofleet. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE CTA -->
+    <div class="mobile-sticky-cta" id="mobile-sticky-cta">
+        <a href="https://wa.me/15556004102?text=¡Hola!%20Quiero%20hacer%20de%20mi%20auto%20una%20fuente%20de%20ingresos%20pasivos" class="btn btn-primary track-wa" target="_blank" rel="noopener noreferrer">
+            ALQUILAR MI AUTO
+        </a>
+        <a href="https://wa.me/15556004102?text=¡Hola!%20Me%20gustaría%20información%20sobre%20el%20alquiler%20de%20autos" class="btn btn-secondary track-wa" target="_blank" rel="noopener noreferrer">
+            QUIERO ALQUILAR UN AUTO
+        </a>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
